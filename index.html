@@ -4,27 +4,28 @@
 <!DOCTYPE html>
 <html class="">
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta charset="UTF-8">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Site Description - CHANGE">
-    <meta rel="author" href="https://plus.google.com/address">
-    <meta rel="publisher" href="https://plus.google.com/address">
+  <meta charset="UTF-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ site.data.settings.seo.description }}">
+  <meta rel="author" href="{{ site.data.settings.seo.rel-author }}">
+  <meta rel="publisher" href="{{ site.data.settings.seo.rel-publisher }}">
 
-    <title>Site Title</title>
+  <title>{{ site.data.settings.title }}</title>
 
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <!-- <link rel="stylesheet" href="assets/css/1-tools/font-awesome/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
-     {% include analytics.html %}
+  {% include analytics.html %}
 </head>
 <body>
 
-    {% include header.html %}
-    {% include content.html  %}
-    {% include footer.html  %}
+{% include header.html %}
+{% include about.html %}
 
+{% include footer.html %}
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="{{ site.github.url }}/assets/js/functions.js"></script>
 </body>
 </html>

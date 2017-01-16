@@ -1,0 +1,28 @@
+h3
+    @extend %small-bold
+    color: $red
+    text-align: center
+    padding: 100px 0 30px
+
+.face-lockup
+    max-width: 780px
+    +display(flex)
+    margin: 0 auto
+    +align-items(center)
+    +justify-content(space-between)
+
+    .face-img
+        border-radius: 50%
+        background-size: cover
+        background-position: center
+        background-image: url('/assets/img/grant-smith-portrait.jpg')
+        +size(200px)
+
+    [class^="icon-"]
+        +size(100px)
+        background: $bgcolor
+        border-radius: 50%
+        padding: 38px
+
+        path
+            fill: $red

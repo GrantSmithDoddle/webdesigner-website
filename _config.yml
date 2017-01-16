@@ -1,4 +1,16 @@
-name: Your New Jekyll Site
-markdown: redcarpet
-highlighter: pygments # or rouge or null
-exclude: ["node_modules", "gulpfile.js", "package.json"]
+#Site Settings
+
+title: Web Designer
+email: grant@transitiongraphics.co.uk
+description: "Father // Freelancer // Designer // Developer // Cyclist"
+
+#Build Settings
+
+markdown: kramdown
+permalink: pretty
+
+port: 3000
+
+sass:
+    sass_dir: assets/css
+    style: :compressed
