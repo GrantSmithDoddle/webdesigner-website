@@ -18,6 +18,10 @@ h3
         background-image: url('/assets/img/grant-smith-portrait.jpg')
         +size(200px)
 
+        +mobile
+            margin: 0 auto
+
+
     [class^="icon-"]
         +size(100px)
         background: $bgcolor
@@ -26,3 +30,49 @@ h3
 
         path
             fill: $red
+
+        +mobile
+            display: none
+
+.blurb
+    max-width: 620px
+    padding: 0 15px
+    margin: 50px auto
+    font-size: 20px
+    font-weight: 300
+
+    a
+
+        &:hover
+            border-bottom: 1px dotted $red
+
+.skill-lockup
+    max-width: 540px
+    margin: 100px auto
+    +clearfix
+
+    +mobile
+        max-width: 270px
+
+
+    .skill-unit
+        width: 270px
+        float: left
+
+    .skill-icons
+        font-size: 0
+        margin: 5px 0 30px
+
+        span
+            display: inline-block
+            +size(14px)
+            background-color: $red
+            margin-right: 8px
+            border-radius: 50%
+
+        @for $i from 1 through 10
+          &.skill-#{$i} span:nth-child(n+#{$i+1})
+            @extend %skill-color
+
+%skill-color
+  background: $bgcolor

@@ -71,8 +71,7 @@ a {
   text-decoration: none;
   outline: 0; }
   a:hover, a:focus {
-    color: #b37679;
-    border-bottom: 1px dotted #7D4648; }
+    color: #b37679; }
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
@@ -397,6 +396,9 @@ h3 {
     background-image: url("/assets/img/grant-smith-portrait.jpg");
     height: 200px;
     width: 200px; }
+    @media screen and (max-width: 767px) {
+      .face-lockup .face-img {
+        margin: 0 auto; } }
   .face-lockup [class^="icon-"] {
     height: 100px;
     width: 100px;
@@ -405,6 +407,45 @@ h3 {
     padding: 38px; }
     .face-lockup [class^="icon-"] path {
       fill: #7D4648; }
+    @media screen and (max-width: 767px) {
+      .face-lockup [class^="icon-"] {
+        display: none; } }
+
+.blurb {
+  max-width: 620px;
+  padding: 0 15px;
+  margin: 50px auto;
+  font-size: 20px;
+  font-weight: 300; }
+  .blurb a:hover {
+    border-bottom: 1px dotted #7D4648; }
+
+.skill-lockup {
+  max-width: 540px;
+  margin: 100px auto; }
+  .skill-lockup::after {
+    clear: both;
+    content: "";
+    display: block; }
+  @media screen and (max-width: 767px) {
+    .skill-lockup {
+      max-width: 270px; } }
+  .skill-lockup .skill-unit {
+    width: 270px;
+    float: left; }
+  .skill-lockup .skill-icons {
+    font-size: 0;
+    margin: 5px 0 30px; }
+    .skill-lockup .skill-icons span {
+      display: inline-block;
+      height: 14px;
+      width: 14px;
+      background-color: #7D4648;
+      margin-right: 8px;
+      border-radius: 50%; }
+
+.skill-lockup .skill-icons.skill-1 span:nth-child(n+2), .skill-lockup .skill-icons.skill-2 span:nth-child(n+3), .skill-lockup .skill-icons.skill-3 span:nth-child(n+4), .skill-lockup .skill-icons.skill-4 span:nth-child(n+5), .skill-lockup .skill-icons.skill-5 span:nth-child(n+6), .skill-lockup .skill-icons.skill-6 span:nth-child(n+7), .skill-lockup .skill-icons.skill-7 span:nth-child(n+8), .skill-lockup .skill-icons.skill-8 span:nth-child(n+9), .skill-lockup .skill-icons.skill-9 span:nth-child(n+10), .skill-lockup .skill-icons.skill-10 span:nth-child(n+11) {
+  background: #e5eaee; }
 
 footer {
   background: url("/assets/img/hero-footer-bg.jpg") center center;
