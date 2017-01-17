@@ -1,5 +1,7 @@
 # Created by https://www.gitignore.io/api/macos,jekyll,sass,wordpress
 
+asset-originals/
+
 ### macOS ###
 *.DS_Store
 .AppleDouble
