@@ -1,9 +1,3 @@
-#Site Settings
-
-title: Web Designer
-email: grant@transitiongraphics.co.uk
-description: "Father // Freelancer // Designer // Developer // Cyclist"
-
 #Build Settings
 
 markdown: kramdown

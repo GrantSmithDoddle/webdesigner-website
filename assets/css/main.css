@@ -67,11 +67,11 @@ input[type="button"] {
     outline: 0; }
 
 a {
-  color: #7D4648;
+  color: #930A2A;
   text-decoration: none;
   outline: 0; }
   a:hover, a:focus {
-    color: #b37679; }
+    color: #ef1447; }
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
@@ -365,7 +365,7 @@ header {
     line-height: 1; }
 
 h3 {
-  color: #7D4648;
+  color: #930A2A;
   text-align: center;
   padding: 100px 0 30px; }
 
@@ -405,7 +405,7 @@ h3 {
     border-radius: 50%;
     padding: 25px; }
     .face-lockup [class^="icon-"] path {
-      fill: #7D4648; }
+      fill: #930A2A; }
     @media screen and (max-width: 767px) {
       .face-lockup [class^="icon-"] {
         display: none; } }
@@ -416,7 +416,7 @@ h3 {
   margin: 50px auto;
   font-size: 20px; }
   .blurb a:hover {
-    border-bottom: 1px dotted #7D4648; }
+    border-bottom: 1px dotted #930A2A; }
 
 .skill-lockup {
   max-width: 540px;
@@ -438,7 +438,7 @@ h3 {
       display: inline-block;
       height: 14px;
       width: 14px;
-      background-color: #7D4648;
+      background-color: #930A2A;
       margin-right: 8px;
       border-radius: 50%; }
 
