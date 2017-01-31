@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,800");
 html {
   box-sizing: border-box; }
 
@@ -414,7 +414,8 @@ h3 {
   max-width: 680px;
   padding: 0 15px;
   margin: 50px auto;
-  font-size: 20px; }
+  font-size: 20px;
+  font-weight: 300; }
   .blurb a:hover {
     border-bottom: 1px dotted #930A2A; }
 
@@ -444,6 +445,70 @@ h3 {
 
 .skill-lockup .skill-icons.skill-1 span:nth-child(n+2), .skill-lockup .skill-icons.skill-2 span:nth-child(n+3), .skill-lockup .skill-icons.skill-3 span:nth-child(n+4), .skill-lockup .skill-icons.skill-4 span:nth-child(n+5), .skill-lockup .skill-icons.skill-5 span:nth-child(n+6), .skill-lockup .skill-icons.skill-6 span:nth-child(n+7), .skill-lockup .skill-icons.skill-7 span:nth-child(n+8), .skill-lockup .skill-icons.skill-8 span:nth-child(n+9), .skill-lockup .skill-icons.skill-9 span:nth-child(n+10), .skill-lockup .skill-icons.skill-10 span:nth-child(n+11) {
   background: #e5eaee; }
+
+.alt-section {
+  background-color: #e5eaee; }
+
+.thumb-container {
+  max-width: 960px;
+  margin: 0px auto;
+  padding-bottom: 100px; }
+  .thumb-container::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .thumb-container .thumb-unit {
+    display: block;
+    width: 25%;
+    float: left;
+    position: relative;
+    padding-top: 17%;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    @media screen and (max-width: 767px) {
+      .thumb-container .thumb-unit {
+        width: 50%;
+        padding-top: 26%; } }
+    .thumb-container .thumb-unit .thumb-overlay {
+      position: absolute;
+      top: 100%;
+      right: 0px;
+      left: 0px;
+      height: 100%;
+      background: rgba(147, 10, 42, 0.6);
+      text-align: center;
+      transition: all 0.15s ease-out 0s;
+      display: box;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      box-align: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      -o-align-items: center;
+      align-items: center;
+      -ms-flex-align: center;
+      box-pack: distribute;
+      -moz-justify-content: space-around;
+      -ms-justify-content: space-around;
+      -o-justify-content: space-around;
+      justify-content: space-around;
+      -ms-flex-pack: distribute; }
+      .thumb-container .thumb-unit .thumb-overlay strong {
+        display: block;
+        padding: 20px;
+        color: white;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 20px;
+        line-height: 1.2; }
+    .thumb-container .thumb-unit:hover .thumb-overlay {
+      position: absolute;
+      top: 0%;
+      right: 0px;
+      left: 0px; }
 
 footer {
   background: url("/assets/img/hero-footer-bg.jpg") center center;
